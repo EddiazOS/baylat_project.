@@ -41,7 +41,7 @@ Im Rahmen dieses Vorhabens werden die führenden kolumbianischen Varietäten unt
 - *Kohlenhydrate:* Saccharose ($6 - 9\%$) sowie Polysaccharide (Galactomannane, Arabinogalactane).
 
 == 1.3 Strategische Verankerung als Anschubprojekt und Skalierungs-Roadmap
-Dieses Vorhaben ist bewusst als fokussiertes, agiles *Anschubfinanzierungs-Projekt* konzipiert. Um maximale wissenschaftliche Tiefe und methodische Rigorosität bei begrenzten Mitteln ($8.610 thin "EUR"$) zu gewährleisten, konzentriert sich die experimentelle Durchführung exklusiv auf die Agrarmatrix *Spezialitätenkaffee*. 
+Dieses Vorhaben ist bewusst als fokussiertes, agiles *Anschubfinanzierungs-Projekt* konzipiert. Um maximale wissenschaftliche Tiefe und methodische Rigorosität bei begrenzten Mitteln ($8.000 thin "EUR"$) zu gewährleisten, konzentriert sich die experimentelle Durchführung exklusiv auf die Agrarmatrix *Spezialitätenkaffee*. 
 
 Die etablierte und validierte Methodik – die Kopplung von ATR-FTIR, nasschemischer Standardanalytik und Physik-informierten Algorithmen – bildet das methodische Fundament für den anschließenden 3-jährigen bilateralen Vollantrag im Programm *DFG-Minciencias Bilateral Research Grants*. In jenem Großprojekt wird das Framework auf drei weitere strategische kolumbianische Wertschöpfungsketten ausgeweitet: Edelkakao (*Theobroma cacao L.*), tropischer Bienenhonig (*Apis mellifera*) und natives Kokosöl (*Cocos nucifera*), ergänzt um hochauflösende chromatographische Metabolomik (HPLC-MS, GC-MS).
 
@@ -184,7 +184,7 @@ Die Modellauswahl erfolgt über eine multikriterielle Pareto-Optimierung:
 - *AP3 (Monate 6–11, DIT/UdC):* 3-Ebenen-Benchmark (PLSR vs. 1D-CNN vs. PINN), Forschungsaufenthalt des UdC-Nachwuchswissenschaftlers am DIT (M8–9). *Meilenstein M3 (M9):* Pareto-optimale Architektur identifiziert.
 - *AP4 (Monate 10–12, DIT/UdC):* Bilaterale Synthese, 2 Open-Access-Publikationen, Einreichung des DFG-Minciencias-Antrags. *Meilenstein M4 (M12):* Projektbericht und Vollantrag fertiggestellt.
 
-== 6.4 Detaillierte Kostenkalkulation (Gesamtfördersumme: 8.610 €)
+== 6.4 Detaillierte Kostenkalkulation (Gesamtfördersumme: 8.000 €)
 Die Mittelverwendung entspricht exakt den Richtlinien der BAYLAT-Anschubfinanzierung und der beigefügten Kalkulationstabelle (*06_Reiseverwaltung_Kostenkalkulation_Anschubfinanzierung.xlsx*):
 
 #table(
@@ -193,14 +193,14 @@ Die Mittelverwendung entspricht exakt den Richtlinien der BAYLAT-Anschubfinanzie
   align: (left, center, center, center, left),
   stroke: 0.5pt + luma(200),
   table.header([Kategorie], [Misión 1 (DIT->UdC)], [Misión 2 (UdC->DIT)], [Gesamt], [Berechnungsgrundlage]),
-  [Flugkosten (Hin/Rück)], [1.600 €], [1.700 €], [3.300 €], [Transatlantikflug München-Cartagena / Cartagena-München (Economy)],
-  [Übernachtungskosten], [1.100 €], [1.365 €], [2.465 €], [10 Nächte à 110 € in Cartagena / 21 Nächte à 65 € in Deggendorf],
+  [Flugkosten (Hin/Rück)], [1.450 €], [1.500 €], [2.950 €], [Transatlantikflug München-Cartagena / Cartagena-München (Economy)],
+  [Übernachtungskosten], [1.100 €], [1.155 €], [2.255 €], [10 Nächte à 110 € in Cartagena / 21 Nächte à 55 € in Gästehaus DIT],
   [Tagegelder (Verpflegung)], [500 €], [945 €], [1.445 €], [10 Tage à 50 € (Kolumbien) / 21 Tage à 45 € (Deutschland)],
   [Bewirtung / Workshop], [400 €], [-], [400 €], [Catering für den bilateralen KI-Workshop an der UdC],
   [Versicherungsschutz], [100 €], [100 €], [200 €], [Auslandskrankenversicherung (Max. 200 € laut BAYLAT-Richtlinie)],
   [Labormaterialien], [-], [-], [600 €], [Reagenzien und Standards für Kaffeelagerung (Max. 600 € laut BAYLAT)],
-  [Sachausgaben digital], [-], [-], [200 €], [Zubehör für hybride Workshop-Übertragung und Kooperationsplattform],
-  [*Gesamtsumme*], [*3.700 €*], [*4.110 €*], [*8.610 €*], [*Beantragtes Fördervolumen bei BAYLAT (Deckblatt & Belegliste)*]
+  [Sachausgaben digital], [-], [-], [150 €], [Zubehör für hybride Workshop-Übertragung und Kooperationsplattform],
+  [*Gesamtsumme*], [*3.550 €*], [*3.700 €*], [*8.000 €*], [*Beantragtes Fördervolumen bei BAYLAT (Deckblatt & Belegliste, Förderhöchstsatz)*]
 )
 
 == 6.5 Ausblick auf die DFG-Minciencias-Anschlussförderung

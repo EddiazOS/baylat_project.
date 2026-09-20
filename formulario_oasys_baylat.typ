@@ -460,21 +460,21 @@ El plan de 12 meses se organiza en 4 Paquetes de Trabajo (WP):
   [Reise 2], [Cartagena -> Deggendorf (DIT)], [Monat 8–9 (21 Tage)], [1 Nachwuchswissenschaftler/in (UdC - Gruppe Prof. Vivas)], [*Forschungsaufenthalt am DIT:* GPU-Training der Modelle, XAI-Interpretierbarkeit, Edge-Deployment-Tests und Mitarbeit am DFG-Antrag.]
 )
 
-== 7.2 Estimación Presupuestal Consolidada de la Cooperación Bilateral (8.610 €)
+== 7.2 Estimación Presupuestal Consolidada de la Cooperación Bilateral (8.000 €)
 
 #table(
   columns: (1.2fr, 0.9fr, 0.9fr, 0.8fr, 1.8fr),
   fill: (x, y) => if y == 0 { rgb("#f0f3f6") } else { none },
   align: (left, center, center, center, left),
   table.header([Kostenkategorie (BAYLAT)], [Reise 1 (DIT->UdC)], [Reise 2 (UdC->DIT)], [Gesamtbetrag], [Berechnungsgrundlage (gem. BayRKG / BayHO)]),
-  [Flugkosten (Hin- und Rückflug)], [1.600 €], [1.700 €], [3.300 €], [Transatlantik Economy-Tarife (München-Cartagena / Cartagena-München)],
-  [Übernachtungskosten], [1.100 €], [1.365 €], [2.465 €], [10 Nächte à 110 € in Cartagena / 21 Nächte à 65 € in Deggendorf],
+  [Flugkosten (Hin- und Rückflug)], [1.450 €], [1.500 €], [2.950 €], [Transatlantik Economy-Tarife (München-Cartagena / Cartagena-München)],
+  [Übernachtungskosten], [1.100 €], [1.155 €], [2.255 €], [10 Nächte à 110 € in Cartagena / 21 Nächte à 55 € in Gästehaus DIT],
   [Tagegelder (Verpflegungspauschale)], [500 €], [945 €], [1.445 €], [10 Tage à 50 € (Kolumbien) / 21 Tage à 45 € (Deutschland)],
   [Bewirtung und Repräsentanz], [400 €], [-], [400 €], [Tagungsbewirtung für bilateralen KI-Workshop an der UdC],
   [Auslandskrankenversicherung], [100 €], [100 €], [200 €], [Maximal zulässiger Fördersatz nach BAYLAT-Richtlinien],
   [Labormaterialien (Kaffeeanalytik)], [-], [-], [600 €], [Standards für Chlorogensäuren, Reagenzien (Max. 600 € nach BAYLAT)],
-  [Sachausgaben digitale Formate], [-], [-], [200 €], [Streaming- und Konferenzzubehör für hybride Zusammenarbeit],
-  [*Gesamtfördersumme BAYLAT*], [*3.700 €*], [*4.110 €*], [*8.610 €*], [*Beantragtes Gesamtbudget bei BAYLAT (Deckblatt & Belegliste)*]
+  [Sachausgaben digitale Formate], [-], [-], [150 €], [Streaming- und Konferenzzubehör für hybride Zusammenarbeit],
+  [*Gesamtfördersumme BAYLAT*], [*3.550 €*], [*3.700 €*], [*8.000 €*], [*Beantragtes Gesamtbudget bei BAYLAT (Deckblatt & Belegliste, Förderhöchstsatz)*]
 )
 
 // =============================================================================

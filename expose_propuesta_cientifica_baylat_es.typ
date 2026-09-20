@@ -34,7 +34,7 @@ El aseguramiento de calidad convencional depende de cataciones sensoriales subje
 ]
 
 == 1.2 Alcance del Proyecto Semilla y Hoja de Ruta de Escalabilidad
-Este proyecto semilla de 12 meses ($8.610 thin "EUR"$) se enfoca deliberadamente en una única matriz agroalimentaria emblemática: el *café especial colombiano*, garantizando profundidad experimental, reproducibilidad analítica y solidez metodológica bajo un presupuesto acotado.
+Este proyecto semilla de 12 meses ($8.000 thin "EUR"$) se enfoca deliberadamente en una única matriz agroalimentaria emblemática: el *café especial colombiano*, garantizando profundidad experimental, reproducibilidad analítica y solidez metodológica bajo un presupuesto acotado.
 
 La metodología establecida –articulación de ATR-FTIR, métodos analíticos normatizados de bajo costo y modelos físico-químicos neuronales– constituirá la evidencia preliminar indispensable para presentar una propuesta conjunta de gran escala dentro de la convocatoria *DFG-Minciencias Bilateral Research Grants* (con una duración de 3 años). En dicha fase de expansión, el marco se aplicará a otras matrices estratégicas de la biodiversidad colombiana: cacao fino de aroma (*Theobroma cacao L.*), miel de abejas artesanal (*Apis mellifera*) y aceite de coco virgen (*Cocos nucifera*), incorporando metabolómica cromatográfica de alta resolución (LC-HRMS, GC-MS).
 
@@ -181,7 +181,7 @@ La selección de la mejor arquitectura se realiza conforme a tres criterios de P
 - *WP3 (Meses 6–11, DIT/UdC):* Benchmarking en 3 niveles, estancia del investigador de UdC en Deggendorf (M8–9). *Hito H3 (M9):* Arquitectura óptima de Pareto seleccionada.
 - *WP4 (Meses 10–12, DIT/UdC):* Síntesis bilateral, envío de 2 artículos científicos y estructuración de la propuesta DFG-Minciencias. *Hito H4 (M12):* Radicación del proyecto y reporte final a BAYLAT.
 
-== 6.4 Presupuesto Detallado de la Cooperación (Total Solicitado: 8.610 €)
+== 6.4 Presupuesto Detallado de la Cooperación (Total Solicitado: 8.000 €)
 El presupuesto concuerda fielmente con las directrices de la convocatoria de financiamiento inicial BAYLAT y con la hoja oficial de cálculo (*06_Reiseverwaltung_Kostenkalkulation_Anschubfinanzierung.xlsx*):
 
 #table(
@@ -190,14 +190,14 @@ El presupuesto concuerda fielmente con las directrices de la convocatoria de fin
   align: (left, center, center, center, left),
   stroke: 0.5pt + luma(200),
   table.header([Rubro Presupuestal], [Misión 1 (DIT->UdC)], [Misión 2 (UdC->DIT)], [Total], [Base de Cálculo Normativa]),
-  [Pasajes aéreos (Ida/Vuelta)], [1.600 €], [1.700 €], [3.300 €], [Vuelos transatlánticos en clase económica (Múnich-Cartagena / Cartagena-Múnich)],
-  [Gastos de Alojamiento], [1.100 €], [1.365 €], [2.465 €], [10 noches a 110 € en Cartagena / 21 noches a 65 € en Deggendorf],
+  [Pasajes aéreos (Ida/Vuelta)], [1.450 €], [1.500 €], [2.950 €], [Vuelos transatlánticos en clase económica (Múnich-Cartagena / Cartagena-Múnich)],
+  [Gastos de Alojamiento], [1.100 €], [1.155 €], [2.255 €], [10 noches a 110 € en Cartagena / 21 noches a 55 € en casa de huéspedes DIT],
   [Viáticos / Dietas de Estancia], [500 €], [945 €], [1.445 €], [10 días a 50 € (Colombia) / 21 días a 45 € (Alemania) según BayRKG],
   [Logística y Catering Workshop], [400 €], [-], [400 €], [Atención y refrigerios para el workshop presencial de IA en la UdC],
   [Seguro Médico de Viaje], [100 €], [100 €], [200 €], [Seguro de salud y accidentes internacional (tope máx. 200 € en BAYLAT)],
   [Materiales de Laboratorio], [-], [-], [600 €], [Reactivos y patrones para cinética de café (tope máx. 600 € en BAYLAT)],
-  [Gastos de Medios Digitales], [-], [-], [200 €], [Accesorios para transmisión híbrida del workshop y sesiones virtuales],
-  [*Presupuesto Total Solicitado*], [*3.700 €*], [*4.110 €*], [*8.610 €*], [*Monto total solicitado a BAYLAT (Deckblatt y Belegliste)*]
+  [Gastos de Medios Digitales], [-], [-], [150 €], [Accesorios para transmisión híbrida del workshop y sesiones virtuales],
+  [*Presupuesto Total Solicitado*], [*3.550 €*], [*3.700 €*], [*8.000 €*], [*Monto total solicitado a BAYLAT (Deckblatt y Belegliste, tope máximo permitido)*]
 )
 
 == 6.5 Proyección hacia la Convocatoria DFG-Minciencias

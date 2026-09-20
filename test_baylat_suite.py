@@ -747,6 +747,33 @@ class TestTier5DomainConsistency(unittest.TestCase):
                 f"{lang} exposé missing Raspberry Pi edge deployment feasibility analysis."
             )
 
+    def test_baylat_budget_ceiling_compliance(self):
+        """Tier 5.5: Assert strict compliance with BAYLAT 8.000 EUR maximum funding ceiling."""
+        import openpyxl
+        excel_path = WORKSPACE_DIR / "06_Reiseverwaltung_Kostenkalkulation_Anschubfinanzierung.xlsx"
+        self.assertTrue(excel_path.exists(), "Budget Excel file missing.")
+        
+        wb = openpyxl.load_workbook(excel_path, data_only=True)
+        # Check Deckblatt sum
+        deck_val = wb["Deckblatt"]["C37"].value
+        if deck_val is None:
+            deck_val = sum(wb["Deckblatt"].cell(row=r, column=3).value for r in [25, 27, 29, 31, 33, 35])
+        self.assertEqual(deck_val, 8000, f"Deckblatt total {deck_val} does not equal exactly 8000 EUR.")
+        
+        # Check Belegliste sum
+        items_sum = sum(wb["Belegliste"].cell(row=r, column=7).value for r in range(13, 23) if wb["Belegliste"].cell(row=r, column=7).value)
+        self.assertEqual(items_sum, 8000, f"Belegliste sum {items_sum} does not equal exactly 8000 EUR.")
+
+        # Check all typ files for absence of 8.610
+        for doc_key in ["formulario", "expose_de", "expose_en", "expose_es"]:
+            txt = self._get_document_text(doc_key)
+            self.assertNotIn("8.610", txt, f"{doc_key} contains deprecated budget 8.610.")
+            self.assertNotIn("8,610", txt, f"{doc_key} contains deprecated budget 8,610.")
+            self.assertTrue(
+                "8.000" in txt or "8,000" in txt,
+                f"{doc_key} does not state the 8.000 EUR budget total."
+            )
+
 
 # ============================================================================
 # Standalone CLI Test Runner with Tiered Diagnostics

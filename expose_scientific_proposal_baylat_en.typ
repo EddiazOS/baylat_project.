@@ -34,7 +34,7 @@ Standard quality monitoring relies either on subjective sensory cupping or expen
 ]
 
 == 1.2 Seed Grant Scope and Strategic Scalability Roadmap
-This 12-month seed project ($8,610 thin "EUR"$) focuses exclusively on *Colombian Specialty Coffee* (*Coffea arabica*) to maximize experimental depth and analytical rigor. 
+This 12-month seed project ($8,000 thin "EUR"$) focuses exclusively on *Colombian Specialty Coffee* (*Coffea arabica*) to maximize experimental depth and analytical rigor. 
 
 The validated methodology—coupling ATR-FTIR, AOAC wet-chemical standards, and physics-informed models—provides the empirical and algorithmic foundation for a subsequent 3-year bilateral grant application under the *DFG-Minciencias Bilateral Research Grants* programme. In that scaled initiative, the framework will be expanded to three additional strategic Colombian agri-food matrices: Fine Cocoa (*Theobroma cacao L.*), Artisanal Honey (*Apis mellifera*), and Virgin Coconut Oil (*Cocos nucifera*), integrating high-throughput chromatography (LC-HRMS, GC-MS).
 
@@ -181,7 +181,7 @@ Model selection optimizes three Pareto axes:
 - *WP3 (Months 6–11, DIT/UdC):* 3-tier benchmark execution, research stay of UdC junior researcher at DIT (M8–9). *Milestone M3 (M9):* Optimal Pareto architecture identified.
 - *WP4 (Months 10–12, DIT/UdC):* Bilateral synthesis, two open-access manuscripts submitted, DFG-Minciencias grant drafted. *Milestone M4 (M12):* Submission of follow-up grant and final BAYLAT report.
 
-== 6.4 Detailed Budget Plan (Total Requested: 8,610 €)
+== 6.4 Detailed Budget Plan (Total Requested: 8,000 €)
 The budget strictly follows BAYLAT regulations and matches *06_Reiseverwaltung_Kostenkalkulation_Anschubfinanzierung.xlsx*:
 
 #table(
@@ -190,14 +190,14 @@ The budget strictly follows BAYLAT regulations and matches *06_Reiseverwaltung_K
   align: (left, center, center, center, left),
   stroke: 0.5pt + luma(200),
   table.header([Budget Category], [Mission 1 (DIT->UdC)], [Mission 2 (UdC->DIT)], [Total], [Basis of Calculation]),
-  [Airfare (Round-trip)], [1,600 €], [1,700 €], [3,300 €], [Transatlantic economy airfare (Munich-Cartagena / Cartagena-Munich)],
-  [Accommodation Costs], [1,100 €], [1,365 €], [2,465 €], [10 nights @ 110 € in Cartagena / 21 nights @ 65 € in Deggendorf],
+  [Airfare (Round-trip)], [1,450 €], [1,500 €], [2,950 €], [Transatlantic economy airfare (Munich-Cartagena / Cartagena-Munich)],
+  [Accommodation Costs], [1,100 €], [1,155 €], [2,255 €], [10 nights @ 110 € in Cartagena / 21 nights @ 55 € in DIT Guest House],
   [Per Diem (Subsistence)], [500 €], [945 €], [1,445 €], [10 days @ 50 € (Colombia) / 21 days @ 45 € (Germany) per BayRKG],
   [Hospitality / Workshop], [400 €], [-], [400 €], [Catering and organization for on-site AI workshop at UdC],
   [Travel Insurance], [100 €], [100 €], [200 €], [International health insurance (maximum 200 € per BAYLAT rules)],
   [Laboratory Materials], [-], [-], [600 €], [Reference standards and reagents for coffee aging (maximum 600 €)],
-  [Digital Conference Costs], [-], [-], [200 €], [Streaming accessories for hybrid workshop delivery and collaboration],
-  [*Total BAYLAT Funding*], [*3,700 €*], [*4,110 €*], [*8,610 €*], [*Total funding requested from BAYLAT (Deckblatt & Belegliste)*]
+  [Digital Conference Costs], [-], [-], [150 €], [Streaming accessories for hybrid workshop delivery and collaboration],
+  [*Total BAYLAT Funding*], [*3,550 €*], [*3,700 €*], [*8,000 €*], [*Total funding requested from BAYLAT (Deckblatt & Belegliste, maximum ceiling)*]
 )
 
 == 6.5 Pathway to DFG-Minciencias Follow-Up Funding
