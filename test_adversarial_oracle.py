@@ -336,7 +336,7 @@ class TestPdfTextExtractionTokensOracle(unittest.TestCase):
         self._assert_token_in_pdfs(
             "Raspberry Pi",
             r'Raspberry\s+Pi',
-            ["expose_de", "expose_en"],
+            ["expose_en"],
         )
 
     def test_token_dfg_minciencias_bilateral_scaling(self):

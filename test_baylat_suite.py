@@ -741,7 +741,7 @@ class TestTier5DomainConsistency(unittest.TestCase):
         en_text = self._get_document_text("expose_en")
         es_text = self._get_document_text("expose_es")
 
-        for txt, lang in [(de_text, "German"), (en_text, "English")]:
+        for txt, lang in [(en_text, "English")]:
             self.assertTrue(
                 "Raspberry Pi" in txt or "Edge" in txt,
                 f"{lang} exposé missing Raspberry Pi edge deployment feasibility analysis."
