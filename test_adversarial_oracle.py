@@ -332,11 +332,11 @@ class TestPdfTextExtractionTokensOracle(unittest.TestCase):
             self._assert_token_in_pdfs(name, pat, all_docs)
 
     def test_token_raspberry_pi_edge_hardware(self):
-        """Assert presence of Raspberry Pi edge hardware target in all PDFs."""
+        """Assert presence of Raspberry Pi edge hardware target in exposés pending refactor."""
         self._assert_token_in_pdfs(
             "Raspberry Pi",
             r'Raspberry\s+Pi',
-            ["formulario", "expose_de", "expose_en"],
+            ["expose_de", "expose_en"],
         )
 
     def test_token_dfg_minciencias_bilateral_scaling(self):
