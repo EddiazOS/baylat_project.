@@ -1,7 +1,7 @@
 #import "typst-scientific-report-template/template.typ": project, callout
 
 #show: project.with(
-  title: [Physik-informierte neuronale Differentialgleichungen und multimodale Spektralsensorik zur autonomen Qualitäts- und Frischevorhersage von kolumbianischem Spezialitätenkaffee],
+  title: [Künstliche Intelligenz und Spektroskopie zur Bewertung der Lebensmittelqualität],
   subtitle: [Wissenschaftliches Exposé und Forschungsantrag – BAYLAT-Anschubfinanzierung (OASys 2026/2027)],
   objective: [
     Formulierung, Evaluierung und Validierung eines analytischen und rechnergestützten Rahmens zur Verknüpfung von Fourier-Transform-Infrarotspektroskopie mit abgeschwächter Totalreflexion (ATR-FTIR), normierten physikochemischen Referenzanalysen und Physik-informierten Deep-Learning-Modellen (PIML) für kolumbianischen Spezialitätenkaffee (*Coffea arabica*). Im Fokus steht die systematische Gegenüberstellung traditioneller chemometrischer Methoden (PLSR, SVR) mit tiefen neuronalen Netzen (1D-CNN) und durch kinetische Arrhenius-Abbaugesetze regulierten Modellen (PINN) unter realen tropischen Lagerbedingungen, ergänzt durch das explorative Screening moderner Sequenzmodelle (Mamba SSM, Spektral-Transformer) sowie die Stärkung der bilateralen Kooperation und wissenschaftlichen Nachwuchsförderung zwischen der Technischen Hochschule Deggendorf (DIT) und der Universidad de Cartagena (UdC).

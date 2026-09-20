@@ -19,9 +19,9 @@
 // DEFINICIÓN DE BLOQUES DE TEXTO PARAMETRIZADOS PARA VALIDACIÓN REGLAMENTARIA
 // =============================================================================
 
-#let titel_de = "Physik-informierte neuronale Differentialgleichungen und multimodale Spektralsensorik zur autonomen Vorhersage der Alterungskinetik von kolumbianischem Spezialitätenkaffee"
-#let titel_es = "Ecuaciones Diferenciales Neuronales Informadas por Física y Detección Espectral Multimodal para la Predicción Autónoma de la Cinética de Envejecimiento en Café Especial Colombiano"
-#let titel_en = "Physics-Informed Neural Differential Equations and Multimodal Spectral Sensing for Autonomous Aging Kinetics Prediction in Colombian Specialty Coffee"
+#let titel_de = "Künstliche Intelligenz und Spektroskopie zur Bewertung der Lebensmittelqualität"
+#let titel_es = "Inteligencia Artificial y Espectroscopía para la Evaluación de la Calidad de los Alimentos"
+#let titel_en = "Artificial Intelligence and Spectroscopy for Food Quality Assessment"
 
 #let stichwoerter_de = "FTIR-Spektroskopie, Spezialitätenkaffee, Abbaukinetik, Physik-informiertes Deep Learning, PINN, Chemometrie, PLSR, DIT, UdC, Kolumbien."
 #let stichwoerter_es = "Espectroscopía FTIR, Café especial, Cinética de degradación, Deep Learning informado por la física, PINN, Quimiometría, PLSR, DIT, UdC, Colombia."
@@ -194,9 +194,9 @@ El plan de 12 meses se organiza en 4 Paquetes de Trabajo (WP):
   fill: (x, y) => if y == 0 { rgb("#f0f3f6") } else { none },
   align: (center, left, center, center),
   table.header([Idioma], [Título Oficial Registrado en Plataforma], [Longitud], [Límite]),
-  [DE], [#titel_de], [171 c], [400 c],
-  [ES], [#titel_es], [179 c], [400 c],
-  [EN], [#titel_en], [149 c], [400 c]
+  [DE], [#titel_de], [79 c], [400 c],
+  [ES], [#titel_es], [86 c], [400 c],
+  [EN], [#titel_en], [68 c], [400 c]
 )
 
 == 1.3 Descriptores Temáticos y Palabras Clave (Stichwörter — Máx. 200 caracteres)

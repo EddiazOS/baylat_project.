@@ -736,15 +736,13 @@ class TestTier5DomainConsistency(unittest.TestCase):
             )
 
     def test_edge_computing_raspberry_pi_constraints(self):
-        """Tier 5.4: Assert edge AI deployment constraints on Raspberry Pi hardware."""
-        de_text = self._get_document_text("expose_de")
-        en_text = self._get_document_text("expose_en")
-        es_text = self._get_document_text("expose_es")
-
-        for txt, lang in [(en_text, "English")]:
-            self.assertTrue(
-                "Raspberry Pi" in txt or "Edge" in txt,
-                f"{lang} exposé missing Raspberry Pi edge deployment feasibility analysis."
+        """Tier 5.4: Assert absence of deprecated Raspberry Pi edge hardware claims."""
+        for doc_key in ["formulario", "expose_de", "expose_en", "expose_es"]:
+            txt = self._get_document_text(doc_key)
+            self.assertNotIn(
+                "Raspberry Pi",
+                txt,
+                f"{doc_key} still contains deprecated Raspberry Pi reference."
             )
 
     def test_baylat_budget_ceiling_compliance(self):

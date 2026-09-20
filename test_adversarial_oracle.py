@@ -332,12 +332,14 @@ class TestPdfTextExtractionTokensOracle(unittest.TestCase):
             self._assert_token_in_pdfs(name, pat, all_docs)
 
     def test_token_raspberry_pi_edge_hardware(self):
-        """Assert presence of Raspberry Pi edge hardware target in exposés pending refactor."""
-        self._assert_token_in_pdfs(
-            "Raspberry Pi",
-            r'Raspberry\s+Pi',
-            ["expose_en"],
-        )
+        """Assert absence of unrealistic Raspberry Pi edge hardware target in all PDFs."""
+        for doc_key in ["formulario", "expose_de", "expose_en"]:
+            text = self.pdf_texts[doc_key]
+            self.assertNotIn(
+                "Raspberry Pi",
+                text,
+                f"{doc_key} still contains deprecated Raspberry Pi reference."
+            )
 
     def test_token_dfg_minciencias_bilateral_scaling(self):
         """Assert presence of DFG-Minciencias follow-up call token in all PDFs."""

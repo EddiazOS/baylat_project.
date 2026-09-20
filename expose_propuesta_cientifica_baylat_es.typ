@@ -1,7 +1,7 @@
 #import "typst-scientific-report-template/template.typ": project, callout
 
 #show: project.with(
-  title: [Ecuaciones Diferenciales Neuronales Informadas por Física y Detección Espectral Multimodal para la Predicción Autónoma de Calidad y Frescura en Café Especial Colombiano],
+  title: [Inteligencia Artificial y Espectroscopía para la Evaluación de la Calidad de los Alimentos],
   subtitle: [Memoria Científica y Propuesta de Investigación – Financiamiento Inicial BAYLAT (OASys 2026/2027)],
   objective: [
     Formular, evaluar y validar un marco analítico y computacional que integre espectroscopía infrarroja por transformada de Fourier con reflectancia total atenuada (ATR-FTIR), ensayos fisicoquímicos normatizados y modelos de Deep Learning informados por la física (PIML) en café especial colombiano (*Coffea arabica*). El proyecto se centra en contrastar rigurosamente métodos quimiométricos tradicionales (PLSR, SVR) frente a redes neuronales profundas (1D-CNN) y redes informadas por leyes cinéticas de degradación tipo Arrhenius (PINN) bajo condiciones de envejecimiento en climas tropicales, manteniendo una exploración modular de arquitecturas avanzadas (Mamba SSM, Transformers espectrales) y fortaleciendo la cooperación bilateral y la formación de investigadores entre la Technische Hochschule Deggendorf (DIT) y la Universidad de Cartagena (UdC).
