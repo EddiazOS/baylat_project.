@@ -1,0 +1,776 @@
+=== PAGE 1 ===
+ 
+ 
+ 
+ 
+ 
+ 
+Leitfaden für die Antragstellung mit dem 
+Online-Antragsverwaltungssystem OASys zur 
+BAYLAT-Anschubfinanzierung für neue 
+Projekte 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Auf den nächsten Seiten finden Sie 
+Erläuterungen zur Eingabe der benötigten 
+Daten und zur Benutzung des Systems 
+OASys 
+ 
+ 
+Erstellt von: Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT), Stand: 09/2026
+
+
+=== PAGE 2 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+Inhaltsverzeichnis 
+ 
+Seite   
+ 
+ 
+1. Startseite         2 
+2. Einen Antrag neu anlegen       3 
+3. Navigation im Online-Antragsverwaltungssystem (OASys)  4 
+4. Projektpartner        6 
+5. Projektbeschreibung       9 
+6. Expertise/ Finanzierung       13 
+7. Organisation         15 
+8. Nachwuchswissenschaftler (optional)     21 
+9. Dateiverwaltung        22 
+10. Abschluss         24 
+ 
+  
+
+=== PAGE 3 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+2 
+ 
+ 
+ 
+1. Startseite 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Hinweis: Unter /www.baylat.org/foerderprogramme.html sind die Rahmenbedingungen der 
+BAYLAT-Förderprogramme hinterlegt.  
+ 
+Klicken Sie auf Neuer Antrag, um einen neuen Antrag zu stellen. Die weitere Vorgehensweise 
+wird Ihnen in Kapitel 2 erklärt. 
+ 
+Falls Sie bereits im aktuellen Förderzeitraum einen Antrag  angelegt haben und diesen nun 
+weiterbearbeiten möchten, geben Sie im Feld Token den Zugangsschlüssel ein, der Ihnen nach 
+Ihrer ersten Anmeldung angezeigt wurde und klicken Sie auf Antrag öffnen. 
+ 
+ 
+ 
+ 
+  
+0 
+1 
+Durch Weitergabe des Zugangsschlüssels erlauben Sie dritten Personen den Zugriff auf Ihren 
+Antrag. Ob diese Vorgehensweise ein „Muss“ ist , liegt im E rmessen Ihrer Institution – BAYLAT 
+mischt sich in die internen Verwaltungsabläufe der jeweiligen Institution nicht ein.  
+1 
+2 
+2 
+
+=== PAGE 4 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+3 
+ 
+ 
+ 
+2. Einen Antrag neu anlegen 
+ 
+Schritt 1 aus Kapitel 1 haben Sie bereits erledigt. 
+ 
+Es erscheint nun eine Eingabemaske, siehe nachfolgendes Bild . Tragen Sie dort die 
+geforderten Angaben ein. Es handelt sich um Pflichtfelder. 
+ 
+Bevor der Antrag er stellt werden kann, müssen Sie die Datenschutzerklärung per Mausklick 
+akzeptieren, sonst ist eine Antragstellung nicht möglich. Das zugehörige Dokument können Sie 
+entweder per Klick auf Datenschutzerklärung annehme n einsehen bzw. am unteren 
+Bildschirmrand unter Erklärungen zum Projektantrag aufrufen. 
+Klicken Sie nun auf Antrag erstellen. 
+ 
+ 
+ 
+ 
+  
+0 
+1 
+1 
+2 
+2 
+
+=== PAGE 5 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+4 
+ 
+ 
+ 
+Nun öffnet sich die nachfolgend abgebildete Seite. 
+ 
+Wichtig: Bitte stellen Sie sicher, dass Sie den Zugangsschlüssel gut aufbewahren, um ggf. die 
+Bearbeitung des Antrages unterbrechen und zu einem späteren Zeitpunkt fortführen zu können. 
+Das System schickt Ihnen zudem eine automatische E -Mail, in der  der Zugangsschlüssel 
+genannt wird. Falls Sie auch Dritten (Forschungsreferenten, Kooperationspartnern) den Zugang 
+zu Ihrem Antrag ermöglichen wollen, dann geben Sie den Zugangsschlüssel an diese Personen 
+weiter. 
+ 
+ 
+ 
+3. Navigation im Online-Antragsverwaltungssystem (OASys) 
+Im oberen Bildbereich des Online -Antragsverwaltungssystems (OASys) finden Sie 
+verschiedene Menüpunkte, siehe nachfolgende Grafik . Dort wird Ihnen jeweils der Menüpunkt 
+angezeigt, in dem Sie sich aktuell befinden (blau hinterlegt), sowie die nachfolgenden bzw. 
+vorhergehenden Menüpunkte  (grau hinterlegt) . Sie können frei zwischen den Menüpunkten 
+wechseln. Ihre zuletzt getätigten Eingaben werden jeweils automatisch vom System 
+gespeichert. 
+ 
+Im Beispielbild unten befindet sich der Nutzer im Bereich „Projektübersicht“. Mit einem Klick auf 
+die grauen Felder „Zugangsschlüssel“ oder „1. Projektpartner“ kann der Nutzer in den 
+entsprechenden Menüpunkt wechseln. 
+  
+1 
+1 
+2 
+XXXXX
+1 
+ 
+2 
+
+=== PAGE 6 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+5 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Was steckt hinter den einzelnen Menüpunkten? 
+ 
+Projektübersicht Hier erhalten Sie einen Überblick über Ihren Projektantrag, 
+z. B. über die bereits von Ihnen eingegebenen Daten und den 
+Status Ihres Projektes. 
+Zugangsschlüssel Hier wird Ihr Zugangsschlüssel angezeigt. 
+Projektpartner Hier werden sämtliche Projektpartner gelistet, die Sie im 
+System angegeben haben. 
+Projektbeschreibung Hier geben Sie die Details zu Ihrem Projektvorhaben an, wie 
+z. B. dessen Titel und Zielsetzung. 
+Expertise/ Finanzierung Hier geben Sie u.a. Details zur Kooperation und der 
+Finanzierung des Projektes an. 
+Organisation Hier vermerken Sie z. B. Details zum zeitlichen Ablauf des 
+Projektvorhabens. 
+Reiseverwaltung Hier machen Sie Angaben zu den geplanten Reisen. 
+Nachwuchswissenschaftler Hier können Sie Angaben zur Beteiligung von 
+Nachwuchswissenschaftlern machen. 
+Dateiverwaltung Hier haben Sie die Möglichkeit, zusätzliche Dokumente im 
+PDF-Format hochzuladen. 
+Abschluss Hier können Sie z. B. die Angaben Ihres Antrags exportieren 
+und abspeichern sowie Ihren fertigen Antrag absenden. 
+ 
+ 
+Über die Auswahl DE/ES/PT/EN können Sie zwischen der deutsch- spanisch-, portugiesisch- 
+und englischsprachigen Version des Systems wechseln.  
+ 
+Über Logout besteht die Möglichkeit , die Bearbeitung zu unterbrechen und zu einem späteren 
+Zeitpunkt fortzusetzen. 
+  
+2 
+3 
+1 & 2 
+3 
+ 4 
+4 
+
+=== PAGE 7 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+6 
+ 
+ 
+ 
+4. Projektpartner 
+Es empfiehlt sich zunächst die Eingabe der Projektpartner. Projektpartner 1 (= Antragsteller) und 
+Projektpartner 2 (= Kooperationspartner bzw. Hauptkooperationspartner) sind bereits rudimentär mit 
+den Daten versehen , die Sie beim Anlegen des Projektantrages angegeben haben . Um bei Bedarf 
+weitere Projektpartner hinzuzufügen, folgen Sie bitte der Beschreibung unten.  
+ 
+Wie füge ich weitere Projektpartner hinzu? 
+Unterhalb der Eingabemaske von Projektpartner 1 bzw. Projektpartner 2 befindet sich der Menüpunkt 
+Neuen Partner hinzufü gen. Um weitere Partner hinzuzufügen, müssen Sie zunächst den Vor - und 
+Nachnamen der jeweiligen Person in die dazugehörigen Felder eintragen und dann auf Hinzufügen 
+klicken. Dadurch wird entsprechend eine weitere Eingabemaske erzeugt. Dieses Prinzip wiederholt sich 
+immer wieder, so z. B. auch im Menüpunkt zur Reiseverwaltung. 
+Auf den folgenden beiden Seiten finden Sie eine Darstellung und Schritt-für-Schritt-Anleitung hierzu. 
+  
+
+=== PAGE 8 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+7 
+ 
+ 
+ 
+3 
+5 & 6 
+1 
+ 
+ 
+2 
+ 
+
+
+=== PAGE 9 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+8 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Rufen Sie jeweils die Eingabemaske für den gewünschten Projektpartner auf. 
+ 
+ 
+Füllen Sie die Eingabemaske durch Texteingabe oder mittels Auswahllisten aus. 
+Wichtig ist , hier das Kurzprofil (unterstes Eingabefeld) des Antragstellers zu bearbeiten. Falls 
+weitere Reisende beantragt werden, ist deren Kurzprofil unter „Reiseverwaltung“ zu hinterlegen. 
+Antragsteller/ Reisende ohne Kurzprofil können nicht gefördert werden. 
+ 
+Um weitere Partner hinzuzufügen, müssen Sie in diesem Bereich zunächst den Vor - und 
+Nachnamen der jeweiligen Person in die dazugehörigen Felder eintragen und dann auf Hinzufügen 
+klicken. Dadurch wird eine weitere Eingabemaske erzeugt (vgl. Schritt 1). 
+ 
+Bei der Anlage von zusätzlichen Projektpartnern wird ab Projektpartner 2 ein zusätzliches Feld 
+unterhalb des Kurzprofils der Person angezeigt. Dort machen Sie bitte Angaben zur Hochschule, 
+der Projektpartner 2, Projektpartner 3 etc. angehören. 
+ 
+In dieser Eingabemaske empfiehlt es sich, regelmäßig Speichern zu klicken, um Datenverluste zu 
+vermeiden!  
+ 
+Über „Partner entfernen“ können Sie eingegebene Partner auch wieder löschen. 
+ 
+ 
+  
+1 
+2 
+3 
+5 
+4 
+6 
+4 
+ 
+
+=== PAGE 10 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+9 
+ 
+ 
+ 
+5. Projektbeschreibung 
+Auf den folgenden Seiten finden Sie eine Darstellung der Eingabemasken des Menüpunktes 
+„Projektbeschreibung“ und eine Schritt-für-Schritt-Anleitung hierzu. 
+ 
+Hier fügen Sie bitte den Projekttitel in Deutsch und Spanisch/ Portugiesisch sowie optional in 
+Englisch ein. Bitte die vorgesehenen Felder für die Spracheingabe beachten! 
+ 
+Um die Zuordnung zur fachlichen Evaluation zu erleichtern, tragen Sie hier bitte frei gewählte 
+Stichwörter in Deutsch und Spanisch/ Portugiesisch sowie optional in Englisch ein. 
+ 
+Machen Sie hier bitte Angaben zum Mehrwert des Projektpartners. 
+ 
+Hier geben Sie bitte den Bezug Ihres Projektvorhabens zur Internationalisierungsstrategie Ihrer 
+Universität/ Hochschule an. Im Zweifelsfall fragen Sie hierzu bitte bei den für die jeweilige 
+Institution maßgeblichen Stellen (z. B. International Office, Dekanat) nach. 
+ 
+Geben Sie hier Ihre Projektbeschreibung als Kurzfassung (bis 2.000 Zeichen) in Deutsch und 
+Spanisch/ Portugiesisch ggf. in Englisch an. Bitte beachten Sie die vorgesehenen Felder für die 
+Spracheingabe! Wichtig: Dieses Feld wird in die Word -Datei für den Ausdruck des 
+Antrages übernommen. 
+ 
+Geben Sie hier Ihre Projektbeschreibung in ausführlicher Form (bis 10.000 Zeichen) in Deutsch 
+und Spanisch/ Portugiesisch ggf. in Englisch  an. Bitte beachten Sie die vorgesehenen Felder 
+für die Spracheingabe! 
+ 
+Falls Sie für Ihr Vorhaben in der Vergangenheit bereits einmal eine Förderung erhalten haben, 
+machen Sie in diesen Feldern bitte Angaben zur vorherigen Förderung. 
+Die Eingabemaske trägt den Titel „Folgeantrag“, da Sie nun einen Antrag auf weitere Förderung 
+Ihres Vorhabens stellen. 
+ 
+  
+2 
+6 
+4 
+1 
+3 
+5 
+7 
+
+=== PAGE 11 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+10 
+ 
+ 
+ 
+ 
+1 
+ 
+ 
+2 
+3 
+4 
+
+
+=== PAGE 12 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+11 
+ 
+ 
+ 
+ 
+ 
+5 
+ 
+6 
+
+
+=== PAGE 13 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+12 
+ 
+ 
+ 
+ 
+  
+7 
+ 
+
+=== PAGE 14 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+13 
+ 
+ 
+ 
+6. Expertise/ Finanzierung 
+Auf den folgenden Seiten finden Sie eine Darstellung der Eingabemasken des Menüpunktes „Expertise/ 
+Finanzierung“ und eine Schritt-für-Schritt-Anleitung hierzu. 
+ 
+Hier wählen Sie die zugehörige Kategorie laut ERC -Kategorisierung aus, welche der 
+statistischen Auswertung dient. Die Hauptkategorien lassen sich aufklappen, zusätzliche 
+Informationen erhalten Sie beim Berühren der Kategorien mit der Maus. 
+ 
+Hier wählen Sie die passende Art de r Kooperation  und ob Ihr Projektantrag auf einem 
+Erstkontakt oder einer Vertiefung basiert. 
+ 
+Hier nennen Sie Ihre Erfahrung mit unterschiedlichen Förderprogrammen . Sie haben die 
+Möglichkeit, weitere Erfahrungen im rechten Tabellenabschnitt über Hinzufügen aufzunehmen 
+und den Bezug zu einer Ausschreibung zu nennen (soweit vorhanden). 
+ 
+Bitte schreiben Sie hier, warum keine andere Förderung möglich ist.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 
+1 
+2 
+3 
+ 
+4 
+ 
+2 
+
+
+=== PAGE 15 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+14 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+3 
+4 
+ 
+
+=== PAGE 16 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+15 
+ 
+ 
+7. Organisation 
+Auf den folgenden Seiten finden Sie eine Darstellung der Eingabemasken des Menüpunktes 
+„Organisation“ und eine Schritt-für-Schritt-Anleitung hierzu. 
+ 
+Mit einem Klick auf das Kalender-Symbol neben dem entsprechenden Feld, öffnet sich ein 
+Kalender, mit dessen Hilfe Sie jeweils das Datum des Projektbeginns und Projektendes 
+auswählen können. Ihr Projekt muss innerhalb der ausgewählten Projektdauer stattfinden, wobei 
+diese aber nicht zwangsläufig der Dauer der Reise entsprechen muss. In der Regel ist die 
+Projektdauer länger als die Reisedauer. 
+ 
+Geben Sie in diesem Feld Ihren Arbeits- und Zeitplan ein.  
+Wichtig: Dieses Feld wird in die Word-Datei für den Ausdruck des Antrages übernommen. 
+ 
+Geben Sie in diesem Bereich an, ob für das Vorhaben bereits anderweitig Fördermittel beantragt 
+und/ oder bewilligt wurden. Ändern Sie ggf. den Doppelförderungsausschluss (Standardein-
+stellung nein) und nennen Sie den Fördermittelgeber. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+2 
+3 
+1 
+1 
+
+
+=== PAGE 17 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+16 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+2 
+3 
+
+
+=== PAGE 18 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+17 
+ 
+ 
+ 
+8. Nachwuchswissenschaftler (optional) 
+Im M enüpunkt „Nachwuchswissenschaftler“ haben Sie die Gelegenheit, die Daten von 
+Nachwuchswissenschaftlern anzugeben. Die Funktionsweise der Eingabemaske entspricht der, die Sie 
+schon im Menüpunkt „Projektpartner“ kennengelernt haben. Bitte gehen Sie entsprechend analog vor.  
+ 
+ 
+ 
+  
+
+
+=== PAGE 19 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+18 
+ 
+ 
+ 
+ 
+9. Dateiverwaltung 
+Auf den folgenden Seiten finden Sie eine Darstellung der Eingabemasken des Menüpunktes 
+„Dateiverwaltung“ und eine Schritt-für-Schritt-Anleitung hierzu. 
+ 
+Mit einem Klick auf den Button Auswählen (siehe folgende Seite) können Sie zusätzliche 
+Dokumente, die Ihrer Auffassung nach für eine positive Begutachtung wichtig sind, im PDF-
+Format hochladen und uns übermitteln (Dateigröße maximal 5 MB). In Betracht kommen hierfür 
+z. B. : Lebensläufe, eine ausführliche Projektbeschreibung , Hochschulabkommen/  Letter of 
+Intent, Befürwortung (BAY), Befürwortung (LAT) usw.  
+ 
+Zur Gedächtnisstütze können Sie die Abhakliste mit den hochgeladenen Dokumenten nutzen.  
+ 
+ 
+ 
+ 
+ 
+  
+1 
+2 
+1 
+
+
+=== PAGE 20 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+19 
+ 
+ 
+ 
+ 
+  
+2 
+
+
+=== PAGE 21 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+20 
+ 
+ 
+ 
+10. Abschluss 
+Auf den folgenden Seiten finden Sie eine Darstellung der Eingabemasken des Menüpunktes 
+„Abschluss“ und eine Schritt-für-Schritt-Anleitung hierzu. 
+ 
+Über Antrag speichern  haben Sie die Möglichkeit, die Bearbeitung des Antrages  zu 
+unterbrechen, um diesen mittels des bekannten Zugangsschlüssels zu einem späteren 
+Zeitpunkt zu öffnen und mit der Bearbeitung fortzufahren. 
+ 
+Mittels Antrag endgültig abschicken  übermitteln Sie uns Ihren Antrag elektronisch. Sie 
+können weiterhin die von Ihnen eingegeben Daten lesen, eine weitere Bearbeitung ist dann 
+aber nicht mehr möglich. Bitte beachten Sie, dass das System beim Erreichen der Deadline 
+automatisch schließt und eine Einreichung dann nicht mehr zulässt. 
+ 
+Wenn Sie Antrag endgültig abschicken  (vgl. Schritt 2)  anklicken, erscheint dieses Popup. 
+Bitte lassen Sie sich nicht irritieren , sondern nehmen Sie die Meldung zum Anlass, nochmals 
+zu überprüfen, ob Sie alles Notwendige hinterlegt haben. Dies tun Sie am einfachsten, indem 
+Sie einen Blick auf das Word -Dokument werfen (vgl. Schritt 4): Sind dort alle Felder mit Inhalt 
+gefüllt, können Sie von der Vollständigkeit des Antrages ausgehen. Wenn Sie dann auf Ja 
+klicken, wird der Antrag elektronisch übermittelt. 
+ 
+Wenn Sie Exportieren (DOCX) anklicken, öffnet sich ein Word -Dokument (weitere Details 
+siehe Schritt 4), in dem eine aussagekräftige Teilmenge der in das System eingegebenen Daten 
+verknüpft ist. 
+ 
+Hier sehen Sie, wie das exportierte Worddokument (vgl. Schritt 3) aussieht. Darin  sind Felder 
+definiert, die mit Inhalten der Datenbank verknüpft sind. Sie können dieses Dokument mit Word 
+bearbeiten und speichern. 
+Da der Seitenumbruch von der Anzahl der Partner und der Menge der eingegebenen Daten 
+abhängt, lässt sich dieser im Vorfeld nicht final festlegen. Da das Ergebnis nicht immer schön 
+aussieht, können Sie hier ggf. noch „Schönheitskorrekturen“ durchführen. 
+Bitte fügen Sie dort keine neuen Inhalte hinzu,  sondern beschränken sich wirklich auf 
+Schönheitskorrekturen, wie z.  B. Seitenumbrüche bzw. das Entfer nen redundanter 
+Informationen (z. B. Wiederholung des Kurzprofils von Reisenden). 
+Das endgültige Dokument drucken Sie dann bitte aus, versehen es mit der 
+rechtsverbindlichen Unterschrift des bayerischen Projektverantwortlichen und senden 
+es uns bis spätestens eine Woche nach der elektronischen Deadline postalisch zu.  
+ 
+  
+1 
+4 
+2 
+5 
+3 
+
+=== PAGE 22 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+21 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 
+1 
+2 
+4 
+
+
+=== PAGE 23 ===
+  
+ 
+Leitfaden für die Antragstellung mit dem Online-Antragsverwaltungssystem 
+Bayerisches Hochschulzentrum für Lateinamerika (BAYLAT)  Tel. +49 (0) 9131 85 25955 
+Apfelstraße 6  Fax +49 (0) 9131 85 25949 
+91054 Erlangen  www.baylat.org 
+ 
+22 
+ 
+ 
+ 
+Geschafft! Sollte nach Absenden dringender Handlungsbedarf (!) für eine Korrektur 
+bestehen, nehmen Sie Kontakt mit uns auf. 
+ 
+ 
+ 
+Bitte beachten Sie, dass dieser Leitfaden nur als Hilfestellung für Nutzer Online-
+Antragsverwaltungssystem OASys dient und somit  keinen Anspruch auf V ollständigkeit und 
+Richtigkeit erhebt. Für Schäden, die Ihnen im Rahmen der Antragstellung durch Anwendung 
+dieses Leitfadens entstehen, kann daher keine Haftung übernommen werden.  
+Sollten Sie bei der Bearbeitung Ihres Förderantrages Fragen haben, wenden Sie sich im 
+Zweifelsfalle bitte an BAYLAT. Vielen Dank für Ihr Verständnis. 
+5 
+
+
