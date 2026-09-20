@@ -21,7 +21,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
 
 # Workspace root
-WORKSPACE_DIR = Path("/home/echoes/projects/AI_project/proyecto-babiera").resolve()
+WORKSPACE_DIR = Path(__file__).parent.resolve()
 BIBLIOGRAPHY_FILE = WORKSPACE_DIR / "references.bib"
 TEMPLATE_FILE = WORKSPACE_DIR / "typst-scientific-report-template" / "template.typ"
 
@@ -43,6 +43,12 @@ DOC_CONFIGS = {
         "pdf": WORKSPACE_DIR / "expose_scientific_proposal_baylat_en.pdf",
         "doc_id": "BAYLAT-EXP-EN-2026",
         "lang": "en",
+    },
+    "expose_es": {
+        "src": WORKSPACE_DIR / "expose_propuesta_cientifica_baylat_es.typ",
+        "pdf": WORKSPACE_DIR / "expose_propuesta_cientifica_baylat_es.pdf",
+        "doc_id": "BAYLAT-EXP-ES-2026",
+        "lang": "es",
     },
 }
 
@@ -185,6 +191,10 @@ class TestTier1Compilation(unittest.TestCase):
     def test_compilation_expose_scientific_proposal_en(self):
         """Tier 1.3: Compile expose_scientific_proposal_baylat_en.typ -> PDF."""
         self._compile_document("expose_en")
+
+    def test_compilation_expose_propuesta_cientifica_es(self):
+        """Tier 1.4: Compile expose_propuesta_cientifica_baylat_es.typ -> PDF."""
+        self._compile_document("expose_es")
 
 
 # ============================================================================
@@ -459,6 +469,28 @@ class TestTier3CitationsAndTemplate(unittest.TestCase):
             f"English Exposé should cite core literature. Found: {present}, Expected from: {core_keys}"
         )
 
+    def test_citations_expose_propuesta_cientifica_es(self):
+        """Tier 3.5: Verify all citations in Spanish Exposé exist in references.bib."""
+        citations = self._verify_document_citations("expose_es")
+        self.assertGreater(
+            len(citations),
+            0,
+            "Spanish Exposé must contain literature citations linking to references.bib."
+        )
+        core_keys = [
+            "upadhyay2026enhancingspectralanalysis",
+            "passos2605convolutionalneuralnetworks",
+            "perre2025towardmechanisticmodels",
+            "pronk2026neuralnetworkplacementin",
+            "grundy2025reviewofcurrent",
+        ]
+        present = [k for k in core_keys if k in citations]
+        self.assertGreaterEqual(
+            len(present),
+            3,
+            f"Spanish Exposé should cite core literature. Found: {present}, Expected from: {core_keys}"
+        )
+
     def _verify_template_structure(self, doc_key: str):
         src_path = DOC_CONFIGS[doc_key]["src"]
         self.assertTrue(src_path.exists(), f"Source file {src_path} missing.")
@@ -492,11 +524,11 @@ class TestTier3CitationsAndTemplate(unittest.TestCase):
         )
 
     def test_template_structure_formulario(self):
-        """Tier 3.5: Verify template structure in formulario_oasys_baylat.typ."""
+        """Tier 3.6: Verify template structure in formulario_oasys_baylat.typ."""
         self._verify_template_structure("formulario")
 
     def test_template_structure_expose_de(self):
-        """Tier 3.6: Verify template structure and bibliography in German Exposé."""
+        """Tier 3.7: Verify template structure and bibliography in German Exposé."""
         self._verify_template_structure("expose_de")
         with open(DOC_CONFIGS["expose_de"]["src"], "r", encoding="utf-8") as f:
             content = f.read()
@@ -506,13 +538,23 @@ class TestTier3CitationsAndTemplate(unittest.TestCase):
         )
 
     def test_template_structure_expose_en(self):
-        """Tier 3.7: Verify template structure and bibliography in English Exposé."""
+        """Tier 3.8: Verify template structure and bibliography in English Exposé."""
         self._verify_template_structure("expose_en")
         with open(DOC_CONFIGS["expose_en"]["src"], "r", encoding="utf-8") as f:
             content = f.read()
         self.assertTrue(
             '#bibliography("references.bib"' in content or '#bibliography("references.bib")' in content,
             "English Exposé must end with '#bibliography(\"references.bib\", ...)'"
+        )
+
+    def test_template_structure_expose_es(self):
+        """Tier 3.9: Verify template structure and bibliography in Spanish Exposé."""
+        self._verify_template_structure("expose_es")
+        with open(DOC_CONFIGS["expose_es"]["src"], "r", encoding="utf-8") as f:
+            content = f.read()
+        self.assertTrue(
+            '#bibliography("references.bib"' in content or '#bibliography("references.bib")' in content,
+            "Spanish Exposé must end with '#bibliography(\"references.bib\", ...)'"
         )
 
 
@@ -559,6 +601,10 @@ class TestTier4PdfArtifacts(unittest.TestCase):
         """Tier 4.3: Verify expose_scientific_proposal_baylat_en.pdf exists and > 50 KB."""
         self._validate_pdf_artifact("expose_en")
 
+    def test_pdf_artifact_expose_propuesta_cientifica_es(self):
+        """Tier 4.4: Verify expose_propuesta_cientifica_baylat_es.pdf exists and > 50 KB."""
+        self._validate_pdf_artifact("expose_es")
+
 
 # ============================================================================
 # Tier 5: Adversarial Quality & Domain Consistency Tests
@@ -575,9 +621,10 @@ class TestTier5DomainConsistency(unittest.TestCase):
             return f.read()
 
     def test_four_agrifood_matrices_coverage(self):
-        """Tier 5.1: Assert all 4 Colombian matrices are addressed in both exposés."""
+        """Tier 5.1: Assert all 4 Colombian matrices are addressed across exposés."""
         de_text = self._get_document_text("expose_de")
         en_text = self._get_document_text("expose_en")
+        es_text = self._get_document_text("expose_es")
 
         # German matrix checks
         self.assertTrue(
@@ -615,12 +662,31 @@ class TestTier5DomainConsistency(unittest.TestCase):
             "English exposé missing Virgin Coconut Oil matrix (*Cocos nucifera*)."
         )
 
+        # Spanish matrix checks
+        self.assertTrue(
+            "Cacao" in es_text or "Theobroma cacao" in es_text,
+            "Spanish exposé missing Cocoa matrix (*Theobroma cacao*)."
+        )
+        self.assertTrue(
+            "Café" in es_text or "Coffea arabica" in es_text,
+            "Spanish exposé missing Coffee matrix (*Coffea arabica*)."
+        )
+        self.assertTrue(
+            "Miel" in es_text or "Apis mellifera" in es_text,
+            "Spanish exposé missing Honey matrix (*Apis mellifera*)."
+        )
+        self.assertTrue(
+            "Aceite de coco" in es_text or "Cocos nucifera" in es_text,
+            "Spanish exposé missing Virgin Coconut Oil matrix (*Cocos nucifera*)."
+        )
+
     def test_three_tier_factorial_ai_space_coverage(self):
         """Tier 5.2: Assert 3-tier AI exploration space (Encoders x Backbones x Regularization)."""
         de_text = self._get_document_text("expose_de")
         en_text = self._get_document_text("expose_en")
+        es_text = self._get_document_text("expose_es")
 
-        for txt, lang in [(de_text, "German"), (en_text, "English")]:
+        for txt, lang in [(de_text, "German"), (en_text, "English"), (es_text, "Spanish")]:
             # Encoders
             self.assertTrue(
                 "1D-CNN" in txt or "CNN" in txt,
@@ -641,11 +707,11 @@ class TestTier5DomainConsistency(unittest.TestCase):
             )
             # Regularization
             self.assertTrue(
-                "PINN" in txt or "Physics-Informed" in txt or "Physik-informiert" in txt,
+                "PINN" in txt or "Physics-Informed" in txt or "Physik-informiert" in txt or "físicos" in txt,
                 f"{lang} exposé missing PINN formulation."
             )
             self.assertTrue(
-                "Neural ODE" in txt or "Differentialgleichung" in txt or "NODE" in txt,
+                "Neural ODE" in txt or "Differentialgleichung" in txt or "NODE" in txt or "diferenciales" in txt,
                 f"{lang} exposé missing Neural ODE formulation."
             )
 
@@ -653,10 +719,11 @@ class TestTier5DomainConsistency(unittest.TestCase):
         """Tier 5.3: Assert standardized analytical ground truth assays (AOAC 965.33, AOAC 980.23)."""
         de_text = self._get_document_text("expose_de")
         en_text = self._get_document_text("expose_en")
+        es_text = self._get_document_text("expose_es")
 
-        for txt, lang in [(de_text, "German"), (en_text, "English")]:
+        for txt, lang in [(de_text, "German"), (en_text, "English"), (es_text, "Spanish")]:
             self.assertTrue(
-                "965.33" in txt or "Peroxidzahl" in txt or "Peroxide" in txt,
+                "965.33" in txt or "Peroxidzahl" in txt or "Peroxide" in txt or "peróxido" in txt,
                 f"{lang} exposé missing AOAC 965.33 peroxide value reference assay."
             )
             self.assertTrue(
@@ -672,8 +739,9 @@ class TestTier5DomainConsistency(unittest.TestCase):
         """Tier 5.4: Assert edge AI deployment constraints on Raspberry Pi hardware."""
         de_text = self._get_document_text("expose_de")
         en_text = self._get_document_text("expose_en")
+        es_text = self._get_document_text("expose_es")
 
-        for txt, lang in [(de_text, "German"), (en_text, "English")]:
+        for txt, lang in [(de_text, "German"), (en_text, "English"), (es_text, "Spanish")]:
             self.assertTrue(
                 "Raspberry Pi" in txt or "Edge" in txt,
                 f"{lang} exposé missing Raspberry Pi edge deployment feasibility analysis."

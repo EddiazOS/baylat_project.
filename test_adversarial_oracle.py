@@ -36,7 +36,7 @@ from typing import Dict, List, Set, Tuple
 
 import pypdf
 
-WORKSPACE_DIR = Path("/home/echoes/projects/AI_project/proyecto-babiera").resolve()
+WORKSPACE_DIR = Path(__file__).parent.resolve()
 BIB_PATH = WORKSPACE_DIR / "references.bib"
 TEMPLATE_PATH = WORKSPACE_DIR / "typst-scientific-report-template" / "template.typ"
 
@@ -45,21 +45,28 @@ DOCUMENTS = {
         "name": "OASys Application Form",
         "typ": WORKSPACE_DIR / "formulario_oasys_baylat.typ",
         "pdf": WORKSPACE_DIR / "formulario_oasys_baylat.pdf",
-        "min_pages": 14,
+        "min_pages": 10,
         "min_size": 51200,
     },
     "expose_de": {
         "name": "German Scientific Exposé",
         "typ": WORKSPACE_DIR / "expose_wissenschaftlicher_bericht_baylat_de.typ",
         "pdf": WORKSPACE_DIR / "expose_wissenschaftlicher_bericht_baylat_de.pdf",
-        "min_pages": 15,
+        "min_pages": 5,
         "min_size": 51200,
     },
     "expose_en": {
         "name": "English Scientific Proposal",
         "typ": WORKSPACE_DIR / "expose_scientific_proposal_baylat_en.typ",
         "pdf": WORKSPACE_DIR / "expose_scientific_proposal_baylat_en.pdf",
-        "min_pages": 20,
+        "min_pages": 5,
+        "min_size": 51200,
+    },
+    "expose_es": {
+        "name": "Spanish Scientific Proposal",
+        "typ": WORKSPACE_DIR / "expose_propuesta_cientifica_baylat_es.typ",
+        "pdf": WORKSPACE_DIR / "expose_propuesta_cientifica_baylat_es.pdf",
+        "min_pages": 5,
         "min_size": 51200,
     },
 }

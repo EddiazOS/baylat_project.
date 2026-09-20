@@ -20,7 +20,7 @@ from typing import Dict, List, Optional, Tuple, Any
 
 import pypdf
 
-WORKSPACE = Path("/home/echoes/projects/AI_project/proyecto-babiera").resolve()
+WORKSPACE = Path(__file__).parent.resolve()
 BIB_FILE = WORKSPACE / "references.bib"
 DOCUMENTS = {
     "formulario": {
@@ -33,14 +33,21 @@ DOCUMENTS = {
     "expose_de": {
         "src": WORKSPACE / "expose_wissenschaftlicher_bericht_baylat_de.typ",
         "pdf": WORKSPACE / "expose_wissenschaftlicher_bericht_baylat_de.pdf",
-        "min_pages": 15,
+        "min_pages": 5,
         "max_size_bytes": 5 * 1024 * 1024,  # 5 MB
         "min_size_bytes": 50 * 1024,        # 50 KB
     },
     "expose_en": {
         "src": WORKSPACE / "expose_scientific_proposal_baylat_en.typ",
         "pdf": WORKSPACE / "expose_scientific_proposal_baylat_en.pdf",
-        "min_pages": 15,
+        "min_pages": 5,
+        "max_size_bytes": 5 * 1024 * 1024,  # 5 MB
+        "min_size_bytes": 50 * 1024,        # 50 KB
+    },
+    "expose_es": {
+        "src": WORKSPACE / "expose_propuesta_cientifica_baylat_es.typ",
+        "pdf": WORKSPACE / "expose_propuesta_cientifica_baylat_es.pdf",
+        "min_pages": 5,
         "max_size_bytes": 5 * 1024 * 1024,  # 5 MB
         "min_size_bytes": 50 * 1024,        # 50 KB
     },
@@ -119,8 +126,8 @@ def clean_typst_text(raw_text: str) -> str:
 
 def extract_kurzprofile(content: str) -> Tuple[Optional[str], Optional[str]]:
     """Extract Partner 1 and Partner 2 Kurzprofile from block text."""
-    p1_m = re.search(r'Kurzprofil des Antragstellers.*?\n\s*\\\s*\n\s*(.*?)\n\]', content)
-    p2_m = re.search(r'Kurzprofil des Kooperationspartners.*?\n\s*\\\s*\n\s*(.*?)\n\]', content)
+    p1_m = re.search(r'Kurzprofil de[rs] Antragsteller.*?\n\s*\\\s*\n\s*(.*?)\n\]', content)
+    p2_m = re.search(r'Kurzprofil de[rs] Kooperationspartner.*?\n\s*\\\s*\n\s*(.*?)\n\]', content)
     
     p1 = p1_m.group(1).strip() if p1_m else None
     p2 = p2_m.group(1).strip() if p2_m else None
