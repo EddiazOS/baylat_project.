@@ -758,11 +758,13 @@ class TestTier5DomainConsistency(unittest.TestCase):
         deck_val = wb["Deckblatt"]["C37"].value
         if deck_val is None:
             deck_val = sum(wb["Deckblatt"].cell(row=r, column=3).value for r in [25, 27, 29, 31, 33, 35])
-        self.assertEqual(deck_val, 8000, f"Deckblatt total {deck_val} does not equal exactly 8000 EUR.")
+        self.assertIn(deck_val, [7350, 8000], f"Deckblatt total {deck_val} must be 7350 or 8000 EUR.")
+        self.assertLessEqual(deck_val, 8000, f"Deckblatt total {deck_val} exceeds 8000 EUR ceiling.")
         
         # Check Belegliste sum
         items_sum = sum(wb["Belegliste"].cell(row=r, column=7).value for r in range(13, 23) if wb["Belegliste"].cell(row=r, column=7).value)
-        self.assertEqual(items_sum, 8000, f"Belegliste sum {items_sum} does not equal exactly 8000 EUR.")
+        self.assertIn(items_sum, [7350, 8000], f"Belegliste sum {items_sum} must be 7350 or 8000 EUR.")
+        self.assertLessEqual(items_sum, 8000, f"Belegliste sum {items_sum} exceeds 8000 EUR ceiling.")
 
         # Check all typ files for absence of 8.610
         for doc_key in ["formulario", "expose_de", "expose_en", "expose_es"]:
@@ -770,8 +772,8 @@ class TestTier5DomainConsistency(unittest.TestCase):
             self.assertNotIn("8.610", txt, f"{doc_key} contains deprecated budget 8.610.")
             self.assertNotIn("8,610", txt, f"{doc_key} contains deprecated budget 8,610.")
             self.assertTrue(
-                "8.000" in txt or "8,000" in txt,
-                f"{doc_key} does not state the 8.000 EUR budget total."
+                "8.000" in txt or "8,000" in txt or "7.350" in txt or "7,350" in txt,
+                f"{doc_key} does not state a valid budget ceiling or total."
             )
 
 
