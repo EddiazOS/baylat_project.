@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project_name": "BAYLAT-DIT-UDC",
+  "description": "Project-specific scope and domain constraints for the BAYLAT / DFG coffee spectroscopy project",
+  "scope_rules": [
+    {
+      "category": "Scope Constraint (Hardware Not Funded)",
+      "pattern": "\\b(raspberry\\s+pi|microcontrolador\\s+edge|edge\\s+iot\\s+device)\\b",
+      "replacement": "El proyecto no financia hardware embebido; enmarcar en modelado quimiométrico e IA interpretable (Grad-CAM 1D, SHAP) en estaciones de trabajo.",
+      "languages": ["es", "en", "de"]
+    },
+    {
+      "category": "Scope Constraint (Specific Objectives Count)",
+      "pattern": "\\b(objetivo\\s+espec[ií]fico\\s+4|specific\\s+objective\\s+4|spezifisches\\s+ziel\\s+4)\\b",
+      "replacement": "El proyecto tiene exactamente 3 objetivos específicos correspondientes a WP1, WP2 y WP3.",
+      "languages": ["es", "en", "de"]
+    },
+    {
+      "category": "Scope Constraint (Experimental Design)",
+      "pattern": "\\b(c[aá]maras?\\s+isot[eé]rmicas?\\s+(?:a\\s+)?(?:25[,\\s]+40[,\\s]+y\\s+60|25[,\\s]+40[,\\s]+and\\s+60))\\b",
+      "replacement": "El diseño contempla almacenamiento natural longitudinal en bodega tropical (26-36 °C, 70-90% HR) con dataloggers continuos.",
+      "languages": ["es", "en", "de"]
+    },
+    {
+      "category": "Domain Precision (Food Physics)",
+      "pattern": "\\b(colpaso|colapso\\s+de\\s+la\\s+matriz|matrix\\s+collapse|kollaps\\s+der\\s+matrix)\\b",
+      "replacement": "transición vítreo-gomosa de la matriz (glass-to-rubber transition)",
+      "languages": ["es", "en", "de"]
+    }
+  ]
+}

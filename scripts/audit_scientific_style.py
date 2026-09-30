@@ -2,22 +2,28 @@
 """
 Scientific Style & Academic Lexicon Auditor (Linter)
 ---------------------------------------------------
-Audits scientific proposals, reports, and papers (.typ, .md, .tex, .txt)
-for LLM clichés (agent-speak), melodramatic hyperbole, and unauthorized scope hallucinations.
+A two-tier modular linter for scientific and academic documents (.typ, .md, .tex, .txt):
+  - Tier 1 (Universal Academic Core): Always active. Enforces academic sobriety, removes LLM clichés,
+    hyperbole, marketing buzzwords, and melodramatic phrasing. Agnostic to scientific discipline.
+  - Tier 2 (Project Scope Manifest): Optional. Loads project-specific scope constraints from a local
+    `.scope_rules.json` file or via `--scope-config` to verify hardware, objective counts, and methodologies.
 
 Exit code:
   0: Clean (no violations detected)
-  1: Style violations found
+  1: Style or scope violations found
 """
 
 import sys
 import re
+import json
 import argparse
 from pathlib import Path
-from typing import List, Dict, Tuple
+from typing import List, Dict, Optional
 
-# Categories of stylistic defects
-RULES = [
+# ==============================================================================
+# TIER 1: UNIVERSAL ACADEMIC CORE RULES (100% Domain-Agnostic)
+# ==============================================================================
+UNIVERSAL_STYLE_RULES: List[Dict] = [
     # ---------------------------------------------------------
     # 1. AGENT-SPEAK & LLM CLICHÉS
     # ---------------------------------------------------------
@@ -30,7 +36,7 @@ RULES = [
     {
         "category": "Agent Cliché / Buzzword",
         "pattern": r"\b(disruptiv[oa]s?|disruptive|disruptiven?)\b",
-        "replacement": "no destructivo / alternativo (ES) | non-destructive / alternative (EN) | zerstörungsfrei / neuartig (DE)",
+        "replacement": "no destructivo / alternativo (ES) | non-destructive / alternative (EN) | neuartig / methodisch innovativ (DE)",
         "languages": ["es", "en", "de"]
     },
     {
@@ -58,12 +64,6 @@ RULES = [
         "languages": ["es", "en", "de"]
     },
     {
-        "category": "Agent Cliché / Inaccurate Concept",
-        "pattern": r"\b(colpaso|colapso\s+de\s+la\s+matriz|matrix\s+collapse|kollaps\s+der\s+matrix)\b",
-        "replacement": "transición vítreo-gomosa de la matriz (glass-to-rubber transition)",
-        "languages": ["es", "en", "de"]
-    },
-    {
         "category": "Agent Cliché / Buzzword",
         "pattern": r"\b(innegociable[s]?|non-negotiable|nicht\s+verhandelbar(?:e[rs]?)?)\b",
         "replacement": "criterio de diseño indispensable / condición operativa necesaria",
@@ -83,8 +83,14 @@ RULES = [
     },
     {
         "category": "Agent Cliché / Empty Affirmation",
-        "pattern": r"\b(reproduc(?:e|ir|iendo)\s+fielmente|faithfully\s+reproduce|getreu\s+nachbilden)\b",
+        "pattern": r"\b(reproduc(?:e|en|ir|iendo)\s+fielmente|faithfully\s+reproduce|getreu\s+nachbilden)\b",
         "replacement": "simular con precisión / representar con exactitud",
+        "languages": ["es", "en", "de"]
+    },
+    {
+        "category": "Agent Cliché / Marketing Claim",
+        "pattern": r"\b(revolucionari[oa]s?|revolutionary|sin\s+precedentes|unprecedented|beispiellos(?:e[rs]?)?)\b",
+        "replacement": "novedoso / escasamente explorado en la literatura",
         "languages": ["es", "en", "de"]
     },
 
@@ -94,77 +100,55 @@ RULES = [
     {
         "category": "Hyperbole & Melodrama",
         "pattern": r"\b(extrema\s+vulnerabilidad\s+intr[ií]nseca|extreme\s+intrinsic\s+vulnerability|extreme\s+intrinsische\s+verwundbarkeit)\b",
-        "replacement": "susceptibilidad al deterioro por humedad y temperatura",
+        "replacement": "susceptibilidad al deterioro por humedad y temperatura / factores ambientales",
         "languages": ["es", "en", "de"]
     },
     {
         "category": "Hyperbole & Melodrama",
         "pattern": r"\b(degrad(?:an|en|a|e|aron)?\s+irreversiblemente|degrade[s]?\s+irreversibly|degradieren\s+irreversibel)\b",
-        "replacement": "experimentan procesos de degradación oxidativa e hidrolítica",
+        "replacement": "experimentan procesos de degradación / disminución de estabilidad",
         "languages": ["es", "en", "de"]
     },
     {
         "category": "Hyperbole & Melodrama",
         "pattern": r"\b(costo\s+prohibitivo|prohibitive\s+cost|unerschwingliche\s+kosten)\b",
-        "replacement": "altos requerimientos de infraestructura / costo analítico elevado",
+        "replacement": "altos requerimientos instrumentales / costo operativo elevado",
         "languages": ["es", "en", "de"]
     },
     {
         "category": "Hyperbole & Melodrama",
         "pattern": r"\b(inherentemente\s+subjetiv[ao]s?|inherently\s+subjective|inhärent\s+subjektiv)\b",
-        "replacement": "análisis organoléptico cualitativo sin proyección de vida útil",
+        "replacement": "evaluación cualitativa sin modelado cuantitativo / limitaciones predictivas",
         "languages": ["es", "en", "de"]
     },
     {
         "category": "Hyperbole & Melodrama",
         "pattern": r"\b(ostenta\s+(?:una\s+posici[oó]n\s+de\s+)?liderazgo\s+indiscutible|holds\s+indisputable\s+leadership|unbestrittene\s+f[uü]hrungsrolle)\b",
-        "replacement": "figura entre los principales productores a nivel mundial",
+        "replacement": "figura entre los principales referentes / productores",
         "languages": ["es", "en", "de"]
     },
     {
         "category": "Hyperbole & Polemic Tone",
         "pattern": r"\b(descart(?:an|en|a|ó)?\s+categ[oó]ricamente|categorically\s+reject(?:ed)?|kategorisch\s+ausschlie(?:ßen|ßt))\b",
-        "replacement": "se desestiman debido a / no se emplean por inducir cinéticas no representativas",
+        "replacement": "se desestiman debido a / no se emplean por inducir artefactos no representativos",
         "languages": ["es", "en", "de"]
     },
     {
         "category": "Hyperbole & Melodrama",
         "pattern": r"\b(aberrante[s]?|aberrant|aberration(?:en)?)\b",
-        "replacement": "artefactos cinéticos no representativos / sesgos analíticos",
+        "replacement": "artefactos analíticos no representativos / sesgos sistemáticos",
         "languages": ["es", "en", "de"]
     },
     {
         "category": "Hyperbole & Melodrama",
         "pattern": r"\b(perturb(?:a|an|en|ó)?\s+profundamente|deeply\s+disrupts?|st[oö]rt\s+zutiefst)\b",
-        "replacement": "modifica sustancialmente el balance químico",
+        "replacement": "modifica sustancialmente / altera significativamente",
         "languages": ["es", "en", "de"]
     },
     {
         "category": "Hyperbole & Melodrama",
         "pattern": r"\b(agrav(?:a|an|en|ó)?\s+exponencialmente|worsens?\s+exponentially|verschl[iä]mmert\s+sich\s+exponentiell)\b",
-        "replacement": "aumenta marcadamente (evitar 'exponencial' sin cota matemática)",
-        "languages": ["es", "en", "de"]
-    },
-
-    # ---------------------------------------------------------
-    # 3. UNAUTHORIZED SCOPE & HALLUCINATED PROMISES
-    # ---------------------------------------------------------
-    {
-        "category": "Scope Hallucination (Hardware)",
-        "pattern": r"\b(raspberry\s+pi|microcontrolador\s+edge|edge\s+iot\s+device)\b",
-        "replacement": "NO FINANCIADO: modelado quimiométrico e IA interpretable (Grad-CAM 1D, SHAP) en estación de cómputo",
-        "languages": ["es", "en", "de"]
-    },
-    {
-        "category": "Scope Hallucination (Objectives)",
-        "pattern": r"\b(objetivo\s+espec[ií]fico\s+4|specific\s+objective\s+4|spezifisches\s+ziel\s+4)\b",
-        "replacement": "EL PROYECTO TIENE ESTRICTAMENTE 3 OBJETIVOS ESPECÍFICOS (WP1, WP2, WP3)",
-        "languages": ["es", "en", "de"]
-    },
-    {
-        "category": "Scope Hallucination (Experimental Design)",
-        "pattern": r"\b(c[aá]maras?\s+isot[eé]rmicas?\s+(?:a\s+)?(?:25[,\s]+40[,\s]+y\s+60|25[,\s]+40[,\s]+and\s+60))\b",
-        "replacement": "EL PROYECTO UTILIZA ALMACENAMIENTO NATURAL LONGITUDINAL (26-36 °C, 70-90% HR)",
+        "replacement": "aumenta de forma marcada / se intensifica (evitar 'exponencial' sin base matemática)",
         "languages": ["es", "en", "de"]
     }
 ]
@@ -186,7 +170,29 @@ class Violation:
             f"    Recommended: {self.replacement}\n"
         )
 
-def audit_file(file_path: Path) -> List[Violation]:
+def load_scope_rules(config_path: Optional[Path] = None) -> List[Dict]:
+    """Load project-specific scope rules if a manifest exists."""
+    rules = []
+    candidates = []
+    if config_path:
+        candidates.append(config_path)
+    else:
+        # Auto-discover .scope_rules.json in current directory or workspace root
+        candidates.append(Path(".scope_rules.json"))
+        candidates.append(Path(__file__).parent.parent / ".scope_rules.json")
+
+    for p in candidates:
+        if p and p.is_file():
+            try:
+                data = json.loads(p.read_text(encoding="utf-8"))
+                rules = data.get("scope_rules", [])
+                break
+            except Exception as e:
+                print(f"Warning: Failed to parse scope config from {p}: {e}", file=sys.stderr)
+    return rules
+
+def audit_file(file_path: Path, scope_rules: Optional[List[Dict]] = None) -> List[Violation]:
+    """Audit a file against universal style rules and optional project scope rules."""
     violations = []
     try:
         content = file_path.read_text(encoding="utf-8")
@@ -194,15 +200,18 @@ def audit_file(file_path: Path) -> List[Violation]:
         print(f"Error reading {file_path}: {e}", file=sys.stderr)
         return violations
 
+    active_rules = list(UNIVERSAL_STYLE_RULES)
+    if scope_rules:
+        active_rules.extend(scope_rules)
+
     lines = content.splitlines()
     for line_idx, line in enumerate(lines, 1):
-        # Ignore comments in typst (//), markdown (<!-- -->), python (#)
         stripped = line.strip()
+        # Skip comment lines
         if stripped.startswith("//") or stripped.startswith("# ") or stripped.startswith("<!--"):
-            # Skip documentation headings if checking rules file itself
             pass
 
-        for rule in RULES:
+        for rule in active_rules:
             matches = list(re.finditer(rule["pattern"], line, re.IGNORECASE))
             for m in matches:
                 violations.append(
@@ -219,17 +228,25 @@ def audit_file(file_path: Path) -> List[Violation]:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Audit scientific documents for LLM clichés, hyperbole, and scope hallucinations."
+        description="Audit scientific documents for LLM clichés, hyperbole, and optional scope rules."
     )
     parser.add_argument("files", nargs="+", help="Files to audit (.typ, .md, .tex, .txt)")
-    parser.add_argument("--ignore-references", action="store_true", help="Ignore references/ or test files that document forbidden terms")
+    parser.add_argument("--scope-config", type=str, default=None, help="Path to project scope config (.scope_rules.json)")
+    parser.add_argument("--universal-only", action="store_true", help="Force pure universal style rules (ignore project scope)")
     args = parser.parse_args()
+
+    scope_rules = []
+    if not args.universal_only:
+        cfg_path = Path(args.scope_config) if args.scope_config else None
+        scope_rules = load_scope_rules(cfg_path)
 
     total_violations = 0
     files_checked = 0
 
     print("=" * 80)
-    print(" SCIENTIFIC STYLE & ACADEMIC LEXICON AUDITOR")
+    print(" SCIENTIFIC STYLE & ACADEMIC RIGOR AUDITOR")
+    mode_str = f"Universal Academic Core + {len(scope_rules)} Project Scope Rules" if scope_rules else "Universal Academic Core (Agnostic Mode)"
+    print(f" Mode: {mode_str}")
     print("=" * 80)
 
     for file_str in args.files:
@@ -237,12 +254,11 @@ def main():
         if not p.exists() or p.is_dir():
             continue
 
-        # Skip blacklist documentation files if requested or automatically
         if "lexicon_blacklist" in p.name or "anti_patterns" in p.name or p.name == "audit_scientific_style.py":
             continue
 
         files_checked += 1
-        violations = audit_file(p)
+        violations = audit_file(p, scope_rules=scope_rules)
         if violations:
             total_violations += len(violations)
             print(f"\n❌ {p.name} ({len(violations)} violation{'s' if len(violations) > 1 else ''}):")
