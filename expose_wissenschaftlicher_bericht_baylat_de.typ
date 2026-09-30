@@ -517,7 +517,7 @@ In den Monaten 11 und 12 wird das bayerisch-kolumbianische Team einen dreijähri
 3. *Strategische Einreichung:* Einreichung im regulären bilateralen DFG-Minciencias-Fenster in Monat 12 zur nahtlosen Fortführung der Forschungsarbeiten.
 
 == 8.2 Skalierung auf strategische Agrarmatrizen der kolumbianischen Biodiversität
-Das im Anschubprojekt an Spezialitätenkaffee (*Coffea arabica*) validierte PIML-Paradigma wird im Folgeantrag auf drei weitere strategische Wertschöpfungsketten Kolumbiens übertragen:
+Der im Anschubprojekt an Spezialitätenkaffee (*Coffea arabica*) validierte PIML-Ansatz wird im Folgeantrag auf drei weitere strategische Wertschöpfungsketten Kolumbiens übertragen:
 
 1. *Edelkakao (*Theobroma cacao L.*):*
    Kolumbien ist international anerkannter Produzent von Edelkakao (*Fino de Aroma*), einer Schlüsselkultur für die ländliche Friedenskonsolidierung. Modelliert werden die Lipidoxidation der Kakaobutter und der thermische Abbau von Flavanolen (Epicatechin, Procyanidine) während der Lagerung von Bohnen und Kakaomasse.

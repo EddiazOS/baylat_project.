@@ -35,3 +35,16 @@ Todo archivo `.typ` debe comenzar importando la plantilla y configurando el bloq
   ```bash
   typst compile documento.typ documento.pdf
   ```
+
+## 5. Estándares de Redacción Científica y Prohibición de Modismos de Agente
+- Toda redacción debe adherirse estrictamente a las directivas de la Skill `.agents/skills/scientific-writing/SKILL.md` y al documento portable `PROMPT_REDACTOR_CIENTIFICO.md`.
+- **Prohibición de hipérboles y sensacionalismo:** No utilizar adjetivos de marketing (*disruptivo, vanguardia, revolucionario, sin precedentes, extrema vulnerabilidad, se degradan irreversiblemente*).
+- **Prohibición de clichés de LLM (*Agent-Speak*):** No utilizar muletillas como *cuello de botella*, *paradigma*, *simple caja negra*, *correlación espuria*, *innegociable*, *desentrañar los mecanismos*.
+- **Rigor conceptual y físico:** Usar conceptos termodinámicos y físicos formales (*transición vítreo-gomosa de la matriz*, *actividad de agua*, *cinética de Arrhenius*).
+- **Ausencia de polémicas defensivas:** Describir el diseño experimental con neutralidad técnica, sin descalificar agresivamente métodos alternativos.
+- **Fidelidad estricta al alcance presupuestado:** No prometer despliegues en dispositivos de bajo costo (*Raspberry Pi / microcontroladores edge*), no agregar objetivos específicos huérfanos fuera de WP1-WP3, ni simular cámaras térmicas artificiales no aprobadas.
+- **Auditoría obligatoria de estilo:** Ejecutar antes de confirmar entregas:
+  ```bash
+  python3 scripts/audit_scientific_style.py documento.typ
+  ```
+

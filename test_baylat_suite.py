@@ -774,6 +774,21 @@ class TestTier5DomainConsistency(unittest.TestCase):
                 f"{doc_key} does not state a valid budget ceiling or total."
             )
 
+    def test_scientific_writing_lexicon_and_style_audit(self):
+        """Tier 5: Audit all documents against prohibited LLM clichés, hyperbole, and scope hallucinations."""
+        sys.path.insert(0, str(WORKSPACE_DIR / "scripts"))
+        from audit_scientific_style import audit_file
+
+        for doc_key, cfg in DOC_CONFIGS.items():
+            violations = audit_file(cfg["src"])
+            violation_msgs = [f"L{v.line_no}: '{v.match_text}' ({v.category})" for v in violations]
+            self.assertEqual(
+                len(violations), 0,
+                f"Document '{doc_key}' ({cfg['src'].name}) failed style audit with {len(violations)} violations:\n"
+                + "\n".join(violation_msgs)
+            )
+
+
 
 # ============================================================================
 # Standalone CLI Test Runner with Tiered Diagnostics
